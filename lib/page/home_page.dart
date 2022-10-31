@@ -54,6 +54,29 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 3.0,
+        child: Container(
+          height: 100.0,
+          color: green,
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  height: 40.0,
+                  decoration: const BoxDecoration(
+                      color: white,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(50.0),
+                        bottomRight: Radius.circular(50.0),
+                      )),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
