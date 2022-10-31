@@ -72,10 +72,35 @@ class HomePage extends StatelessWidget {
                         bottomRight: Radius.circular(50.0),
                       )),
                 ),
+              ),
+              Align(
+                child: Row(
+                  children: const [
+                    BottomNavBar(),
+                    BottomNavBar(),
+                    BottomNavBar(),
+                  ],
+                ),
               )
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {},
+      icon: const Icon(
+        Icons.access_time_sharp,
       ),
     );
   }
